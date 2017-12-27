@@ -1,0 +1,17 @@
+//SOLUTION TO CODECHEF BEGINNER PROBLEM ATM
+#include<stdio.h>
+int main()
+{
+float y;
+int x;
+scanf("%d %f ",&x, &y);
+if (x%5==0)
+{
+if(x<=y-0.5)
+{
+y=y-x-0.5;
+}
+}
+printf("%f",y);
+return 0;
+}

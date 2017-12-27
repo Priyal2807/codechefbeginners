@@ -1,0 +1,22 @@
+//SOLUTION TO CODECHEF PROBLEM FIRST AND LAST DIGITS
+#include<stdio.h>
+int main()
+{
+int t,n,i,r,z,d,s=0;
+scanf("%d",&t);
+for(i=0;i<t;i++)
+{
+scanf("%d",&n);
+d=n;
+while(n!=0)
+{
+r=n%10;
+n=n/10;
+}
+z=d%10;
+s=r+z;
+printf("%d \n",s);
+s=0;
+}
+return 0;
+} 

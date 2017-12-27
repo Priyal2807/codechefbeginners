@@ -1,0 +1,22 @@
+//SOLUTION TO THE CODECHEF PROBLEM FACTORIAL
+#include<stdio.h>
+int main()
+{
+int t,i,sum;
+long long int num;
+scanf("%d",&t);
+while(t>0)
+{
+scanf("%d",&num);
+i=5;
+sum=0;
+while(i<=num)
+{
+sum=sum+(num/i);
+i=i*5;
+}
+printf("%d\n",sum);
+t--;
+}
+return 0;
+}   
