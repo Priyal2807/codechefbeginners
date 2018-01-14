@@ -1,0 +1,28 @@
+Question:GCD and LCM
+solution:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t,i,a,b,gcd,c,d;
+	cin>>t;
+	
+	for(i=0;i<t;i++){
+		cin>>a>>b;
+		c=a;
+		d=b;
+			while(a!=b){
+			if(a>b)
+				a=a-b;
+			
+			else 
+			b=b-a;
+		}
+		cout<<a<<" ";
+		
+			gcd=(c*d)/a;
+			cout<<gcd;
+			cout<<"\n";
+	}
+	return 0;
+} 
