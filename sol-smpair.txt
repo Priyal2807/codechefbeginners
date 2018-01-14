@@ -1,0 +1,24 @@
+Question:to find the smallest pair
+(SMPAIR)
+sol:
+#include<stdio.h>
+#include<algorithm>
+using namespace std;
+int main()
+{
+ int t,a[5000],i,n,sum,j=0;
+ 
+ scanf("%d",&t);
+ for(j=0;j<t;j++)
+ {
+  scanf("%d",&n);
+   for(i=0;i<n;i++)
+   {
+    scanf("%d",&a[i]);
+   }
+   sort(a,a+n);
+   sum=a[0]+a[1];
+   printf("%d\n",sum);
+ }
+ return 0;
+} 
